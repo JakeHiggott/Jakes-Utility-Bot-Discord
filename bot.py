@@ -84,4 +84,4 @@ async def beer(ctx,*,zipcode):
         i = i+1
  
 
-client.run('ODM3MTYyNjc3NDE0OTIwMjEy.YIoigA.nNMQBIco_yyKI5_P4awg93OULdM') #I accidentally committed  this one time but it has since been reset :)
+client.run('INSET_TOKEN_HERE') #I accidentally committed  this one time but it has since been reset :)
