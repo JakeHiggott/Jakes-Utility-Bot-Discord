@@ -1,4 +1,4 @@
-# Jakes-Utilty-Bot-Discord
+# Jakes-Utility-Bot-Discord
 
 JAKES UTILITY BOT FOR DISCORD
 
@@ -8,9 +8,12 @@ JAKES UTILITY BOT FOR DISCORD
 
 - You can play 8 Ball with it
 
-        Command: !8ball YOUR_QUESTION
+        Command: .8ball YOUR_QUESTION
 
 - It can tell you what its connection latency is
 
-        Command: !ping
+        Command: .ping
 
+- It can clear out messages with however many you would like to delete or a set amount
+
+        Command: .clearAll or .clear AMOUNT_OF_MESSAGES

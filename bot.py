@@ -54,7 +54,19 @@ async def _8Ball(ctx,*,question):
                 "Very doubtful."]
     await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
 
+#this command can be used to clear an amount of messages that is passed in
+@client.command()
+async def clear(ctx, amount = 5):
+    await ctx.channel.purge(limit=amount)
+
+#this will clear all of the messages in a channel
+@client.command()
+async def clearAll(ctx):
+    await ctx.channel.purge()
 
 
-client.run('YOUR CER HERE') #I accidentally committed  this one time but it has since been reset :)
+
+
+
+client.run('PUT YOUR CER HERE') #I accidentally committed  this one time but it has since been reset :)
 
