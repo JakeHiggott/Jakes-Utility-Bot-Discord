@@ -22,4 +22,8 @@ JAKES UTILITY BOT FOR DISCORD
 
         Command: .beer POSTAL_CODE
 
-        Open Brewery DB API: https://www.openbrewerydb.org/
+
+
+
+
+Open Brewery DB API: https://www.openbrewerydb.org/

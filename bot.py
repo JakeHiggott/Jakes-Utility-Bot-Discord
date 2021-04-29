@@ -78,9 +78,10 @@ async def beer(ctx,*,zipcode):
     if(len(r.json()) == 0):
         await ctx.send("ERROR: No breweries found make sure postal code is right")
     while (i < len(r.json())):
-        await ctx.send(f"BREWERY: {r.json()[i]['name']}")
-        await ctx.send(f"WEBSITE: {r.json()[i]['website_url']}")
+        await ctx.send(f"Brewery: {r.json()[i]['name']}")
+        await ctx.send(f"Street Adress: {r.json()[i]['street']}")
+        await ctx.send(f"Website: {r.json()[i]['website_url']}")
         i = i+1
  
 
-client.run('INSET CER HERE') #I accidentally committed  this one time but it has since been reset :)
+client.run('ODM3MTYyNjc3NDE0OTIwMjEy.YIoigA.nNMQBIco_yyKI5_P4awg93OULdM') #I accidentally committed  this one time but it has since been reset :)
