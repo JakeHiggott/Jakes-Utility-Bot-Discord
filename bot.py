@@ -1,8 +1,12 @@
 import discord
 from discord.ext import commands
 import random 
+import requests
+import pprint
+
 
 client = commands.Bot(command_prefix = '.')
+
 
 @client.event
 async def on_ready():
@@ -64,9 +68,19 @@ async def clear(ctx, amount = 5):
 async def clearAll(ctx):
     await ctx.channel.purge()
 
+#this command takes a zip code input and returns a list of breweries inside that zipcode
 
+@client.command()
 
+async def beer(ctx,*,zipcode):
+    r = requests.get(f'https://api.openbrewerydb.org/breweries?by_postal={zipcode}')
+    i = 0
+    if(len(r.json()) == 0):
+        await ctx.send("ERROR: No breweries found make sure postal code is right")
+    while (i < len(r.json())):
+        await ctx.send(f"BREWERY: {r.json()[i]['name']}")
+        await ctx.send(f"WEBSITE: {r.json()[i]['website_url']}")
+        i = i+1
+ 
 
-
-client.run('PUT YOUR CER HERE') #I accidentally committed  this one time but it has since been reset :)
-
+client.run('INSET CER HERE') #I accidentally committed  this one time but it has since been reset :)

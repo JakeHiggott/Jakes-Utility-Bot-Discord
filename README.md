@@ -17,3 +17,9 @@ JAKES UTILITY BOT FOR DISCORD
 - It can clear out messages with however many you would like to delete or a set amount
 
         Command: .clearAll or .clear AMOUNT_OF_MESSAGES
+
+- It can take a postal code input and return all of the breweries in that area using the Open Brewey DB API. This functionality is still in beta and needs major work.
+
+        Command: .beer POSTAL_CODE
+
+        Open Brewery DB API: https://www.openbrewerydb.org/
