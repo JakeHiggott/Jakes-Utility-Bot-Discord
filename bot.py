@@ -7,4 +7,5 @@ client = commands.Bot(command_prefix = '.')
 async def on_ready():
     print('Bot is ready.')
 
-client.run('INSERT YOUR BOT CER HERE')
+client.run('INSERT YOUR BOT CER HERE') #MAKE SURE YOU DO NOT COMMIT YOUR CER
+
