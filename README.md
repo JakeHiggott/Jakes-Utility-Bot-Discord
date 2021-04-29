@@ -2,7 +2,7 @@
 
 JAKES UTILITY BOT FOR DISCORD
 
-`Functionality Includes:`
+<strong>Functionality Includes:</strong>
 
 - Can detect when someone has joined/left the server
 
