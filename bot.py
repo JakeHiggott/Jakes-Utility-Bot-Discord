@@ -20,5 +20,6 @@ async def on_member_join(member):
 async def on_member_remove(member):
     print(f'{member} has left a server.')
 
-client.run('ODM3MTYyNjc3NDE0OTIwMjEy.YIoigA.Z191kMpzWDC083k2RiXU9MGWOtQ') #MAKE SURE YOU DO NOT COMMIT YOUR CER
+
+client.run('INSERT TOKEN HERE') #I accidentally committed  this one time but it has since been reset :)
 
